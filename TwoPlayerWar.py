@@ -67,7 +67,7 @@ class Two_Player():
                     print("Player 1 won the hand")
                     time.sleep(1)
 
-                if len(Two_Player.stored_cards)>0: #check to see if there was a tiebreaker as cards from tiebreaker are stored in stored cards
+                elif len(Two_Player.stored_cards)>0: #check to see if there was a tiebreaker as cards from tiebreaker are stored in stored cards
                     print("Player 1 won the tie breaker")
                     time.sleep(1)
                     Two_Player.player1.extend(Two_Player.stored_cards)  #adds cards to player 1 deck won from tiebreaker
@@ -85,7 +85,7 @@ class Two_Player():
                     print("Player 2 won the hand")
                     time.sleep(1)
 
-                if len(Two_Player.stored_cards)>0: #check to see if there was a tiebreaker as cards from tiebreaker are stored in stored cards
+                elif len(Two_Player.stored_cards)>0: #check to see if there was a tiebreaker as cards from tiebreaker are stored in stored cards
                     print("Player 2 won the tie breaker")
                     time.sleep(1)
                     Two_Player.player2.extend(Two_Player.stored_cards) #adds cards to player 2 deck won from tiebreaker
